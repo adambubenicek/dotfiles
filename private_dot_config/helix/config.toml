@@ -1,0 +1,6 @@
+theme = "ayu_dark"
+
+[editor]
+true-color = true
+rulers = [80]
+
