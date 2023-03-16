@@ -3,6 +3,11 @@ font:
   normal: 
     family: "Iosevka Nerd Font"
 
+window:
+  padding:
+    x: 8
+    y: 8
+
 colors:
   primary:
     background: '0x24283b'
