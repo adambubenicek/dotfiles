@@ -25,6 +25,16 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 require("lazy").setup({
   "tpope/vim-surround",
   {
+    "stevearc/oil.nvim",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons"
+    },
+    config = function()
+      vim.keymap.set('n', '-', require("oil").open)
+      require("oil").setup()
+    end
+  },
+  {
     "neovim/nvim-lspconfig",
     dependencies = {
       "williamboman/mason.nvim",
@@ -97,19 +107,6 @@ require("lazy").setup({
           enable = true
         },
       })
-    end,
-  },
-  {
-    "nvim-tree/nvim-tree.lua",
-    config = function()
-      vim.g.loaded_netrw = 1
-      vim.g.loaded_netrwPlugin = 1
-
-      local api = require("nvim-tree.api")
-
-      vim.keymap.set('n', '<leader>t', api.tree.focus)
-
-      require("nvim-tree").setup()
     end,
   },
   {
