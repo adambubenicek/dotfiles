@@ -117,7 +117,10 @@ require("lazy").setup({
   },
   {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
-    dependencies = { 'nvim-lua/plenary.nvim' },
+    dependencies = { 
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope-file-browser.nvim",
+    },
     config = function()
       local builtin = require('telescope.builtin')
       vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
@@ -127,9 +130,21 @@ require("lazy").setup({
 
       require("telescope").setup({
         defaults = {
-            layout_strategy = "vertical"
+          layout_strategy = "vertical",
+          initial_mode = "normal"
+        },
+        extensions = {
+          file_browser = {
+            hijack_netrw = true,
+            select_buffer = true,
+            path = "%:p:h"
+          }
         }
       })
+
+      require("telescope").load_extension("file_browser")
+      local file_browser = require("telescope").extensions.file_browser
+      vim.keymap.set('n', '<leader>.', file_browser.file_browser, {})
     end
   },
   {
