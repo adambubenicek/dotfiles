@@ -25,16 +25,6 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 require("lazy").setup({
   "tpope/vim-surround",
   {
-    "stevearc/oil.nvim",
-    dependencies = {
-      "nvim-tree/nvim-web-devicons"
-    },
-    config = function()
-      vim.keymap.set('n', '-', require("oil").open)
-      require("oil").setup()
-    end
-  },
-  {
     "neovim/nvim-lspconfig",
     dependencies = {
       "williamboman/mason.nvim",
