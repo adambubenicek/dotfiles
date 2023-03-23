@@ -152,5 +152,15 @@ require("lazy").setup({
       vim.o.timeoutlen = 300
       require("which-key").setup({})
     end,
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    config = function()
+      require("toggleterm").setup({
+        open_mapping = [[<C-t>]],
+        shade_terminals = false,
+        direction = "float",
+      })
+    end,
   }
 })
