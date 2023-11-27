@@ -30,12 +30,13 @@ else
 fi
 
 
-HISTFILE=~/.config/zsh/.histfile
+HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd
 bindkey -v
-zstyle :compinstall filename '/home/adam/.config/zsh/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
+setopt HIST_IGNORE_SPACE
 
 autoload -Uz compinit
 compinit
