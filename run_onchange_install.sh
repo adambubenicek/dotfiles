@@ -21,6 +21,7 @@ yay -S --noconfirm \
 	keyd \
 	lazygit \
 	mako \
+	mpv \
 	noto-fonts \
 	openssh \
 	polkit-kde-agent \
