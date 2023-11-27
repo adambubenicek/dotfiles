@@ -9,6 +9,32 @@ if ! command -v yay; then
 	rm -rf yay
 fi
 
-yay -S --noconfirm keyd openssh swaylock swayidle foot fuzzel helix firefox lazygit keepassxc qutebrowser hyprland \
-	xdg-desktop-portal-hyprland xdg-desktop-portal-kde zip unzip zsh polkit-kde-agent mako waybar qt6-wayland qt5-wayland \
-	hyprpaper noto-fonts ttf-iosevka-nerd brigtnessctl syncthing rclone
+yay -S --noconfirm \
+	brigtnessctl \
+	firefox \
+	foot \
+	fuzzel \
+	helix \
+	hyprland \
+	hyprpaper \
+	keepassxc \
+	keyd \
+	lazygit \
+	mako \
+	noto-fonts \
+	openssh \
+	polkit-kde-agent \
+	qt5-wayland \
+	qt6-wayland \
+	qutebrowser \
+	rclone \
+	swayidle \
+	swaylock \
+	syncthing \
+	ttf-iosevka-nerd \
+	unzip \
+	waybar \
+	xdg-desktop-portal-hyprland \
+	xdg-desktop-portal-kde \
+	zip \
+	zsh
