@@ -17,7 +17,6 @@ yay -S --noconfirm \
 	helix \
 	hyprland \
 	hyprpaper \
-	keepassxc \
 	keyd \
 	lazygit \
 	mako \
