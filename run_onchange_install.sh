@@ -21,6 +21,8 @@ yay -S --noconfirm --needed \
 	lazygit \
 	mako \
 	mpv \
+	nodejs \
+	npm \
 	noto-fonts \
 	openssh \
 	polkit-kde-agent \
@@ -38,3 +40,8 @@ yay -S --noconfirm --needed \
 	xdg-desktop-portal-kde \
 	zip \
 	zsh
+
+sudo npm install --global \
+  yarn \
+  typescript \
+  typescript-language-server
