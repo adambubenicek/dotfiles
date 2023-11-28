@@ -9,7 +9,7 @@ if ! command -v yay; then
 	rm -rf yay
 fi
 
-yay -S --noconfirm \
+yay -S --noconfirm --needed \
 	brigtnessctl \
 	firefox \
 	foot \
