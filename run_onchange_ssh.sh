@@ -1,4 +1,6 @@
 #!/bin/sh
 
-systemctl enable --now --user ssh-agent
+if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
+  ssh-keygen -t ed25519
+fi
 
