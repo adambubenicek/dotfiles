@@ -33,6 +33,7 @@ yay -S --noconfirm --needed \
 	swayidle \
 	swaylock \
 	syncthing \
+	firefox-tridactyl-native \
 	ttf-iosevka-nerd \
 	unzip \
 	waybar \

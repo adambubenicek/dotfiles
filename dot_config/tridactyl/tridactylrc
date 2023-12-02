@@ -1,0 +1,4 @@
+guiset gui none
+
+set searchurls.kagi https://kagi.com/search?q=%s
+set searchengine kagi
