@@ -26,6 +26,7 @@ yay -S --noconfirm --needed \
 	npm \
 	noto-fonts \
 	openssh \
+	pamixer \
 	polkit-kde-agent \
 	qt5-wayland \
 	qt6-wayland \
