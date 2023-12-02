@@ -20,6 +20,7 @@ yay -S --noconfirm --needed \
 	keyd \
 	lazygit \
 	mako \
+	man-db \
 	mpv \
 	nodejs \
 	npm \
