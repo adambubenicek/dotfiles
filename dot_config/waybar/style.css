@@ -1,110 +1,21 @@
 * {
+    all: unset;
     font-family: FontAwesome, "Iosevka NF";
     font-size: 11pt;
 }
 
-window#waybar {
-    background: transparent;
-    color: #16161e;
-    transition-duration: .5s;
-}
-
-#window,
-#workspaces {
-    margin: 0;
-}
-
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-
 button {
-    border: none;
-    border-radius: 0;
-    margin: 0;
-}
-
-button:hover {
-    background: inherit;
-}
-
-#workspaces button {
-    padding: 0 13px;
-    background-color: transparent;
     color: rgba(205, 214, 244, 0.5);
-    border: 1px solid rgba(205, 214, 244, 0.2);
-    border-right: none;
+    padding: 0 13px;
 }
 
-#workspaces button:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-#workspaces button:last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-right: 1px solid rgba(205, 214, 244, 0.2);
-}
-
-#workspaces button:hover {
-    opacity: 1;
-}
-
-#workspaces button.active,
-#workspaces button:hover {
+button.active,
+button:hover {
     color: rgba(205, 214, 244, 1);
 }
 
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
-}
-
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
-    margin: 0px;
+widget > label {
     padding: 0 13px;
-    color: #cdd6f4;
-    border: 1px solid rgba(205, 214, 244, 0.2);
-    border-right: none;
-}
-
-#idle_inhibitor {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-#clock {
-    border-right: 1px solid rgba(205, 214, 244, 0.2);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    color: rgba(205, 214, 244, 1);
 }
 
