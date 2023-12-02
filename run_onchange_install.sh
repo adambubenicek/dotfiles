@@ -10,7 +10,7 @@ if ! command -v yay; then
 fi
 
 yay -S --noconfirm --needed \
-	brigtnessctl \
+	brightnessctl \
 	firefox \
 	foot \
 	fuzzel \
