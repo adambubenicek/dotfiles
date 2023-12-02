@@ -3,10 +3,9 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     "height": 34,
-    "margin-bottom": -8,
-    "margin-left": 4,
-    "margin-right": 4,
-    "spacing": 4, // Gaps between modules (4px)
+    "margin-top": 8,
+    "margin-left": 8,
+    "margin-right": 8,
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],

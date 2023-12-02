@@ -1,5 +1,4 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, "Iosevka NF";
     font-size: 11pt;
 }
@@ -10,10 +9,14 @@ window#waybar {
     transition-duration: .5s;
 }
 
+#window,
+#workspaces {
+    margin: 0;
+}
+
 window#waybar.hidden {
     opacity: 0.2;
 }
-
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -27,6 +30,7 @@ window#waybar.chromium {
 button {
     border: none;
     border-radius: 0;
+    margin: 0;
 }
 
 button:hover {
@@ -34,18 +38,31 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 4px;
+    padding: 0 13px;
     background-color: transparent;
-    color: #cdd6f4;
-    opacity: 0.5;
+    color: rgba(205, 214, 244, 0.5);
+    border: 1px solid rgba(205, 214, 244, 0.2);
+    border-right: none;
+}
+
+#workspaces button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#workspaces button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid rgba(205, 214, 244, 0.2);
 }
 
 #workspaces button:hover {
     opacity: 1;
 }
 
-#workspaces button.active {
-    opacity: 1;
+#workspaces button.active,
+#workspaces button:hover {
+    color: rgba(205, 214, 244, 1);
 }
 
 #workspaces button.urgent {
@@ -73,21 +90,21 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #mpd {
-    padding: 0 4px;
+    margin: 0px;
+    padding: 0 13px;
     color: #cdd6f4;
+    border: 1px solid rgba(205, 214, 244, 0.2);
+    border-right: none;
 }
 
-#window,
-#workspaces {
+#idle_inhibitor {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+#clock {
+    border-right: 1px solid rgba(205, 214, 244, 0.2);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
