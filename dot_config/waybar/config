@@ -25,6 +25,8 @@
         "format": "TEMP {temperatureC}°C",
     },
     "backlight": {
+        "reverse-scrolling": true,
+        "reverse-mouse-scrolling": true,
         "format": "BRIGHTNESS {percent}%",
     },
     "battery": {
@@ -39,6 +41,8 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
+        "reverse-scrolling": true,
+        "reverse-mouse-scrolling": true,
         "format": "VOL {volume}%",
     },
 }
