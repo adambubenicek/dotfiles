@@ -267,23 +267,23 @@ bar {
     }
 }
 
-gaps inner 2
-gaps outer -2
+gaps inner 3
+gaps outer -3
 gaps top 0
 smart_gaps on
 
-default_border normal 0
-default_floating_border normal 0
-titlebar_border_thickness 0
+default_border pixel 1
+default_floating_border pixel 1
+titlebar_border_thickness 1
 
 font pango:Iosevka NF 11
 
 # target                 title     bg        text   indicator  border
-client.focused           $lavender $lavender $crust $rosewater $lavender
-client.focused_inactive  $surface0 $mantle   $text  $rosewater $surface0
-client.unfocused         $surface0 $mantle   $text  $rosewater $surface0
-client.urgent            $peach    $mantle   $peach $overlay0  $peach
-client.placeholder       $overlay0 $mantle   $text  $overlay0  $overlay0
-client.background        $base
+client.focused           $lavender $mantle $text    $rosewater $lavender
+client.focused_inactive  $mantle   $mantle $text    $rosewater $mantle
+client.unfocused         $crust    $crust  $text    $rosewater $base
+client.urgent            $peach    $crust  $peach   $overlay0  $peach
+client.placeholder       $crust    $crust  $text    $overlay0  $base
+client.background        $crust 
 
 include /etc/sway/config.d/*
