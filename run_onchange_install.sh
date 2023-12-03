@@ -15,8 +15,6 @@ yay -S --noconfirm --needed \
 	foot \
 	fuzzel \
 	helix \
-	hyprland \
-	hyprpaper \
 	keyd \
 	lazygit \
 	mako \
@@ -32,6 +30,8 @@ yay -S --noconfirm --needed \
 	qt6-wayland \
 	qutebrowser \
 	rclone \
+	sway \
+	swaybg \
 	swayidle \
 	swaylock \
 	syncthing \
@@ -39,7 +39,7 @@ yay -S --noconfirm --needed \
 	ttf-iosevka-nerd \
 	unzip \
 	waybar \
-	xdg-desktop-portal-hyprland \
+	xdg-desktop-portal-wlr \
 	xdg-desktop-portal-kde \
 	zip \
 	zsh
