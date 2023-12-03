@@ -250,6 +250,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
+    status_edge_padding 8
 
     separator_symbol " | "
 
@@ -261,8 +262,8 @@ bar {
         statusline $text
         background $base
         separator $surface0
-        inactive_workspace $base $base $subtext1
-        active_workspace $base $base $subtext1
+        inactive_workspace $base $base $overlay0
+        active_workspace $base $base $overlay0
         focused_workspace $base $base $text
     }
 }
