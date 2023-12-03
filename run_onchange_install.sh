@@ -11,6 +11,7 @@ fi
 
 yay -S --noconfirm --needed \
 	brightnessctl \
+	i3status \
 	firefox \
 	foot \
 	fuzzel \
