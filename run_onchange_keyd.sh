@@ -29,8 +29,6 @@ n = home
 m = pagedown
 , = pageup
 . = end
-
-EOF 
+EOF
 
 sudo systemctl enable --now keyd
-
