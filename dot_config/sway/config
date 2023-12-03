@@ -231,6 +231,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+bindsym Mod4+x exec warpd --hint
+bindsym Mod4+c exec warpd --normal
+bindsym Mod4+g exec warpd --grid
+
 bindsym XF86AudioRaiseVolume exec pamixer -i 1
 bindsym XF86AudioLowerVolume exec pamixer -d 1
 bindsym XF86AudioMute exec pamixer -t
