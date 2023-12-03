@@ -39,6 +39,7 @@ yay -S --noconfirm --needed \
 	firefox-tridactyl-native \
 	ttf-iosevka-nerd \
 	unzip \
+	warpd \
 	waybar \
 	xdg-desktop-portal-wlr \
 	xdg-desktop-portal-kde \
