@@ -15,6 +15,11 @@ j = down
 k = up
 l = right
 
+n = home
+m = pagedown
+, = pageup
+. = end
+
 a = oneshot(meta)
 s = oneshot(alt)
 d = oneshot(control)
