@@ -6,7 +6,8 @@ sudo tee /etc/keyd/default.conf <<EOF
 *
 
 [main]
-capslock = esc
+capslock = overload(mods, esc)
+' = overload(mods, ')
 space = overloadt2(nav, space, 200)
 
 a = overloadt2(meta, a, 200)
