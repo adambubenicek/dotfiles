@@ -273,6 +273,8 @@ gaps inner 3
 gaps outer -3
 gaps top 0
 smart_gaps on
+hide_edge_borders --i3 smart_no_gaps
+smart_borders on
 
 default_border pixel 1
 default_floating_border pixel 1
@@ -280,12 +282,12 @@ titlebar_border_thickness 1
 
 font pango:Iosevka NF 11
 
-# target                 title     bg        text   indicator  border
-client.focused           $lavender $mantle $text    $rosewater $lavender
-client.focused_inactive  $mantle   $mantle $text    $rosewater $mantle
-client.unfocused         $crust    $crust  $text    $rosewater $base
-client.urgent            $peach    $crust  $peach   $overlay0  $peach
-client.placeholder       $crust    $crust  $text    $overlay0  $base
+# target                 title     bg        text     indicator  border
+client.focused           $lavender $base     $text    $rosewater $lavender
+client.focused_inactive  $surface0 $base     $text    $rosewater $surface0
+client.unfocused         $mantle   $mantle   $text    $rosewater $surface0
+client.urgent            $mantle   $mantle   $peach   $overlay0  $peach
+client.placeholder       $mantle   $mantle   $text    $overlay0  $surface0
 client.background        $crust 
 
 include /etc/sway/config.d/*
