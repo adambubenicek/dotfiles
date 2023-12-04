@@ -261,11 +261,11 @@ bar {
 
     colors {
         statusline $text
-        background $base
+        background $mantle
         separator $surface0
-        inactive_workspace $base $base $overlay0
-        active_workspace $base $base $overlay0
-        focused_workspace $base $base $text
+        inactive_workspace $mantle $mantle $overlay0
+        active_workspace $mantle $mantle $overlay0
+        focused_workspace $mantle $mantle $text
     }
 }
 
@@ -273,8 +273,6 @@ gaps inner 3
 gaps outer -3
 gaps top 0
 smart_gaps on
-hide_edge_borders --i3 smart_no_gaps
-smart_borders on
 
 default_border pixel 1
 default_floating_border pixel 1
