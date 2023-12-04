@@ -6,8 +6,7 @@ sudo tee /etc/keyd/default.conf <<EOF
 *
 
 [main]
-capslock = overload(mods, esc)
-' = overload(mods, ')
+capslock = esc
 space = overloadt2(nav, space, 200)
 
 a = overloadt2(meta, a, 200)
@@ -30,6 +29,6 @@ n = home
 m = pagedown
 , = pageup
 . = end
-EOF
+EOF 
 
 sudo systemctl enable --now keyd
