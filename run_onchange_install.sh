@@ -15,6 +15,7 @@ yay -S --noconfirm --needed \
 	firefox \
 	foot \
 	fuzzel \
+	grim \
 	helix \
 	keyd \
 	lazygit \
@@ -31,6 +32,7 @@ yay -S --noconfirm --needed \
 	qt6-wayland \
 	qutebrowser \
 	rclone \
+	slurp \
 	sway \
 	swaybg \
 	swayidle \
