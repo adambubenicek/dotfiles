@@ -1,0 +1,10 @@
+font=Iosevka NF 11
+background-color=#1e1e2e
+text-color=#cdd6f4
+padding=13
+margin=13
+border-size=1
+border-color=#b4befe
+border-radius=5
+progress-color=#313244
+anchor=top-center
