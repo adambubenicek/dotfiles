@@ -11,12 +11,12 @@ fi
 
 yay -S --noconfirm --needed \
 	brightnessctl \
+	i3status \
 	firefox \
 	foot \
 	fuzzel \
+	grim \
 	helix \
-	hyprland \
-	hyprpaper \
 	keyd \
 	lazygit \
 	mako \
@@ -32,14 +32,18 @@ yay -S --noconfirm --needed \
 	qt6-wayland \
 	qutebrowser \
 	rclone \
+	slurp \
+	sway \
+	swaybg \
 	swayidle \
 	swaylock \
 	syncthing \
 	firefox-tridactyl-native \
 	ttf-iosevka-nerd \
 	unzip \
+	warpd \
 	waybar \
-	xdg-desktop-portal-hyprland \
+	xdg-desktop-portal-wlr \
 	xdg-desktop-portal-kde \
 	zip \
 	zsh
