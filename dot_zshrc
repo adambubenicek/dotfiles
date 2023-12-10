@@ -58,6 +58,7 @@ setopt HIST_IGNORE_SPACE
 
 autoload -Uz compinit
 compinit
+zstyle ':completion:*' menu select
 
 export EDITOR=hx
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
