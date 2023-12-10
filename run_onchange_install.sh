@@ -36,6 +36,7 @@ yay -S --noconfirm --needed \
 	sway \
 	swaybg \
 	swayidle \
+	swayimg \
 	swaylock \
 	syncthing \
 	firefox-tridactyl-native \
