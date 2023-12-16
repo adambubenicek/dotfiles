@@ -57,6 +57,10 @@ input type:pointer {
     natural_scroll enabled
 }
 
+input type:keyboard {
+    xkb_options ctrl:nocaps
+}
+
 ### Input configuration
 #
 # Example configuration:
