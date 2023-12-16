@@ -6,6 +6,7 @@ sudo dnf install -y \
 	i3status \
 	foot \
 	fuzzel \
+	neovim \
 	mako \
 	man-db \
 	pamixer \
