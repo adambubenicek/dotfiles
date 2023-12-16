@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sudo dnf remove -y firefox
+
 sudo dnf install -y \
 	brightnessctl \
 	i3status \
@@ -15,6 +17,9 @@ sudo dnf install -y \
 	syncthing \
 	xdg-desktop-portal-wlr \
 	zsh
+
+flatpak install --noninteractive flathub org.mozilla.firefox
+flatpak install --noninteractive flathub io.github.celluloid_player.Celluloid
 
 systemctl enable --user --now gpg-agent.socket
 systemctl enable --user --now gpg-agent-ssh.socket
