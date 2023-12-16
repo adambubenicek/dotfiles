@@ -247,6 +247,6 @@ titlebar_border_thickness 1
 
 font pango:monospace 11
 
-# target                 title     bg        text     indicator  border
+
 
 include /etc/sway/config.d/*
