@@ -1,7 +1,0 @@
-guiset gui none
-
-set searchurls.kagi https://kagi.com/search?q=%s
-set searchengine kagi
-
-setpref signon.rememberSignons false
-setpref middlemouse.paste false

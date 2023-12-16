@@ -20,32 +20,6 @@ set $term foot
 # on the original workspace that the command was run on.
 set $menu fuzzel
 
-set $rosewater #f5e0dc
-set $flamingo  #f2cdcd
-set $pink      #f5c2e7
-set $mauve     #cba6f7
-set $red       #f38ba8
-set $maroon    #eba0ac
-set $peach     #fab387
-set $green     #a6e3a1
-set $teal      #94e2d5
-set $sky       #89dceb
-set $sapphire  #74c7ec
-set $blue      #89b4fa
-set $lavender  #b4befe
-set $text      #cdd6f4
-set $subtext1  #bac2de
-set $subtext0  #a6adc8
-set $overlay2  #9399b2
-set $overlay1  #7f849c
-set $overlay0  #6c7086
-set $surface2  #585b70
-set $surface1  #45475a
-set $surface0  #313244
-set $base      #1e1e2e
-set $mantle    #181825
-set $crust     #11111b
-
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -56,7 +30,6 @@ set $crust     #11111b
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-output * bg $crust solid_color
 output "Dell Inc. AW3423DWF 4PY52S3" mode 3440x1440@165Hz
 
 ### Idle configuration
@@ -71,8 +44,6 @@ output "Dell Inc. AW3423DWF 4PY52S3" mode 3440x1440@165Hz
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
-exec swayidle -w
 
 input type:touchpad {
     tap enabled
@@ -261,15 +232,6 @@ bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     status_command i3status
-
-    colors {
-        statusline $text
-        background $mantle
-        separator $surface0
-        inactive_workspace $mantle $mantle $overlay0
-        active_workspace $mantle $mantle $overlay0
-        focused_workspace $mantle $mantle $text
-    }
 }
 
 gaps inner 2
@@ -280,14 +242,8 @@ default_border pixel 1
 default_floating_border pixel 1
 titlebar_border_thickness 1
 
-font pango:Iosevka NF 11
+font pango:monospace 11
 
 # target                 title     bg        text     indicator  border
-client.focused           $lavender $base     $text    $rosewater $lavender
-client.focused_inactive  $surface0 $base     $text    $rosewater $surface0
-client.unfocused         $mantle   $mantle   $text    $rosewater $surface0
-client.urgent            $mantle   $mantle   $peach   $overlay0  $peach
-client.placeholder       $mantle   $mantle   $text    $overlay0  $surface0
-client.background        $crust 
 
 include /etc/sway/config.d/*
