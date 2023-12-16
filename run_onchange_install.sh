@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 sudo dnf install -y \
 	brightnessctl \
 	i3status \
@@ -16,3 +15,6 @@ sudo dnf install -y \
 	syncthing \
 	xdg-desktop-portal-wlr \
 	zsh
+
+systemctl enable --user --now gpg-agent.socket
+systemctl enable --user --now gpg-agent-ssh.socket
