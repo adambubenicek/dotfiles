@@ -240,17 +240,16 @@ bar {
         background #000000
 	statusline #ffffff
 	separator #1e1e1e
-	focused_workspace #78aeed #1e1e1e #ffffff
-	active_workspace #383838 #1e1e1e #ffffff
-	inactive_workspace #1e1e1e #000000 #ffffff
-	urgent_workspace #f8e45c #000000 #ffffff
+	focused_workspace #000000 #000000 #ffffff
+	active_workspace #000000 #000000 #ffffff
+	inactive_workspace #000000 #000000 #5e5c64
+	urgent_workspace #cd9309 #cd9309 #000000
 	binding_mode #cd9309 #cd9309 #000000
     }
 }
 
 gaps inner 5
 gaps outer -5
-gaps top 0
 
 default_border pixel 1
 default_floating_border pixel 1
