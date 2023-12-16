@@ -259,6 +259,7 @@ titlebar_border_thickness 1
 font pango:monospace 11
 
 client.focused #78aeed #1e1e1e #ffffff #8ff0a4 #78aeed
+client.focused_tab_title #78aeed #1e1e1e #ffffff #8ff0a4 #78aeed
 client.focused_inactive #383838 #1e1e1e #ffffff #8ff0a4 #383838
 client.unfocused #1e1e1e #000000 #ffffff #8ff0a4 #383838
 client.urgent #f8e45c #000000 #ffffff #8ff0a4 #f8e45c
