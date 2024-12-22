@@ -1,0 +1,19 @@
+* {
+  font-family: FiraCode Nerd Font;
+  font-size: 10pt;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  background-color: #000000;
+  color: #b6b8bb;
+}
+
+#workspaces button {
+  color: #b6b8bb;
+}
+
+#workspaces button.active {
+  color: #f9fbff;
+}

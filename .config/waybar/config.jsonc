@@ -1,0 +1,26 @@
+{
+  "reload_style_on_change": true,
+  "spacing": 8,
+  "margin-left": 8,
+  "margin-right": 8,
+  "margin-bottom": 8,
+  "modules-left": [
+    "hyprland/workspaces",
+  ],
+  "modules-right": [
+    "mpd",
+    "pulseaudio",
+    "network",
+    "power-profiles-daemon",
+    "cpu",
+    "memory",
+    "temperature",
+    "backlight",
+    "keyboard-state",
+    "hyprland/language",
+    "battery",
+    "clock",
+    "tray",
+    "custom/power"
+  ],
+}

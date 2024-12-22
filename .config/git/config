@@ -1,0 +1,11 @@
+[user]
+	name = "$NAME"
+	email = "$EMAIL"
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[bash]
+	showInformativeStatus = true
